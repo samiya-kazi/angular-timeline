@@ -13,7 +13,8 @@
         <div class="line" [class.completed-line]="step > 0"></div>
       </div>
 
-      <div class="content">This request is pending.</div>
+      <div *ngIf="step === 0" class="content">This request is pending approval.</div>
+      <div *ngIf="step > 0" class="content">This request is no longer pending approval.</div>
     </div>
   </div>
 
@@ -29,7 +30,8 @@
         <div class="line" [class.completed-line]="step > 1"></div>
       </div>
 
-      <div class="content">This request has been approved.</div>
+      <div *ngIf="step > 0" class="content">This request has been approved.</div>
+      <div *ngIf="step === 0"class="content">This request is pending approval.</div>
     </div>
   </div>
 
@@ -45,7 +47,9 @@
         <div class="line" [class.completed-line]="step > 2"></div>
       </div>
 
-      <div class="content">This request is printing.</div>
+      <div *ngIf="step > 2" class="content">This request has been printed.</div>
+      <div *ngIf="step === 2" class="content">This request is printing.</div>
+      <div *ngIf="step < 2" class="content">This request is still being processed.</div>
     </div>
   </div>
 
@@ -60,7 +64,8 @@
       <div class="line-container">
       </div>
 
-      <div class="content">This request is out for delivery.</div>
+      <div *ngIf="step === 3" class="content">This request is out for delivery.</div>
+      <div *ngIf="step < 3" class="content">This request is still being processed.</div>
     </div>
   </div>
 </div>

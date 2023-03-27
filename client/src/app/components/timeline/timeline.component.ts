@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class TimelineComponent {
 
   order = {
-    status: 'printing'
+    status: 'out for delivery'
   }
 
   step: number = 0;
