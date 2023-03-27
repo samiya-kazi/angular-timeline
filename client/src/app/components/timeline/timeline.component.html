@@ -4,7 +4,8 @@
   <div class="timeline-section">
     <div class="timeline-header">
       <div class="icon completed">
-        <mat-icon class="completed-icon">list_alt</mat-icon>
+        <mat-icon *ngIf="step === 0" class="completed-icon">assignment_late</mat-icon>
+        <mat-icon *ngIf="step > 0" class="completed-icon">assignment_turned_in</mat-icon>
       </div>
       <b>Pending Approval</b>
     </div>

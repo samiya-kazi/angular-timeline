@@ -9,8 +9,8 @@ h1 {
 
 .icon {
   background-color: #bbb;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ h1 {
 }
 
 .line-container {
-  width: 30px;
+  width: 35px;
   display: flex;
   justify-content: center;
   margin-top: 5px;
