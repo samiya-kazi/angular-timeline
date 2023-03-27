@@ -1,0 +1,52 @@
+h1 {
+  text-align: center;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  background-color: #bbb;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.timeline-content {
+  display: flex;
+}
+
+.line-container {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.line {
+  width: 5px;
+  height: 100px;
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+
+.completed {
+  background-color: blueviolet;
+}
+
+.completed-icon {
+  color: white;
+}
+
+.completed-line {
+  background-color: blueviolet;
+}
