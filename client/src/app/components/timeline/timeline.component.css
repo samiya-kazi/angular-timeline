@@ -40,7 +40,7 @@ h1 {
 
 
 .completed {
-  background-color: blueviolet;
+  background-color: #8a2be2;
 }
 
 .completed-icon {
@@ -48,5 +48,16 @@ h1 {
 }
 
 .completed-line {
-  background-color: blueviolet;
+  background: linear-gradient(0deg, rgba(138,43,226,1) 86%, rgba(227,176,244,1) 93%, rgba(138,43,226,1) 100%);
+  background-size: 100% 200%;
+	animation: gradient 2s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
 }
